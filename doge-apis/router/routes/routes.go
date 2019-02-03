@@ -9,4 +9,6 @@ import (
 func RoutePath(r *routing.Router) {
 	v := r.Group("/doge")
 	v.Get("", controller.HelloThereCtrl)
+	v.Get("/speed", controller.TestReceiver)
+	v.Get("/all-speed", controller.TestInterface)
 }
