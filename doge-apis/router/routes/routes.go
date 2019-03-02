@@ -11,4 +11,5 @@ func RoutePath(r *routing.Router) {
 	v.Get("", controller.HelloThereCtrl)
 	v.Get("/speed", controller.TestReceiver)
 	v.Get("/all-speed", controller.TestInterface)
+	v.Get("/mapstringinterface", controller.TestMapStringInterfaceCtrl)
 }

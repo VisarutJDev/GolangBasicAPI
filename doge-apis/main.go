@@ -41,7 +41,7 @@ func errorHandler(c *routing.Context) error {
 				c.RequestCtx.SetBodyString(response)
 			case error:
 				response := `{
-					"message": "` + fmt.Sprintf("%s", x.(error)) + `"
+					"message": "` + fmt.Sprintf("%s", x.Error()) + `"
 				}`
 				c.SetStatusCode(400)
 				c.RequestCtx.SetBodyString(response)
