@@ -12,4 +12,5 @@ func RoutePath(r *routing.Router) {
 	v.Get("/speed", controller.TestReceiver)
 	v.Get("/all-speed", controller.TestInterface)
 	v.Get("/mapstringinterface", controller.TestMapStringInterfaceCtrl)
+	v.Get("/test-recursive", controller.TestRecursivetrl)
 }
